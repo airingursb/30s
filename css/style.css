@@ -1,0 +1,32 @@
+.fa.fa-heart {
+  	color: red;
+  	font-size: 5em;
+  	display: block;
+  	margin: 200px auto;
+  	text-align: center;
+}
+
+.msg {
+	color: red;
+	font-size: 2em;
+	display: block;
+  	margin: 50px auto;
+  	text-align: center;
+}
+
+.msg2 {
+	color: red;
+	font-size: 1em;
+	display: block;
+  	margin: auto;
+  	text-align: center;
+  	height: 20px;
+}
+
+.footer {
+	color: red;
+	font-size: 0.5em;
+	display: block;
+  	margin: auto;
+  	text-align: center;
+}
