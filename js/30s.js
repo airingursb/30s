@@ -1,10 +1,11 @@
 var flag = true
 var love = 0
+var timer = 0 
 
 function newgame() {
-	var timer = 0;
 	if(flag) {
 		love = 0
+		timer = 0;
 		$('#heart').addClass('animated infinite pulse')
 		$('#heart').css('color', 'red')
 		$('#msg').html("I Miss U!")
@@ -24,10 +25,10 @@ function newgame() {
 			$('#msg2').html("真可惜！离30s还差了" + miss + "毫秒。")
 		} else if(Math.abs(miss) > 1000 && Math.abs(miss) <= 3000 ){
 			$('#msg').html("❤❤❤")
-			$('#msg2').html("QAQ！离30s还差了" + parseInt(Math.abs(miss)/60) + "秒。")
+			$('#msg2').html("QAQ！离30s还差了" + parseInt(Math.abs(miss)/1000) + "秒。")
 		} else if(Math.abs(miss) > 3000 && Math.abs(miss) <= 5000 ){
 			$('#msg').html("❤❤")
-			$('#msg2').html("Orz！离30s还差了" + parseInt(Math.abs(miss)/60) + "秒。")
+			$('#msg2').html("Orz！离30s还差了" + parseInt(Math.abs(miss)/1000) + "秒。")
 		} else if(Math.abs(miss) > 5000){
 			$('#msg').html("❤")
 			$('#msg2').html("一点时间观念都没有:-(！离30s还差了" + parseInt(Math.abs(miss)/1000) + "秒。")
