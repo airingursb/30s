@@ -9,7 +9,7 @@ function newgame() {
 		$('#heart').css('color', 'red')
 		$('#msg').html("I Miss U!")
 		$('#msg2').html("")
-		timer = setInterval(function(){love ++;}, 1);
+		timer = setInterval(function(){love = love + 100;}, 100);
 		flag = false;
 	} else {
 		$('#heart').removeClass('animated infinite pulse')
